@@ -4,7 +4,7 @@ After encapsulating operating systems like MS-DOS into container, I decided to g
 
 ## Purpose
 
-To allow old CP/M applications to run (for nostalgia reasons) and to ensure that old operating system can participate in CI/CD scenarios. In this project I am not using qemu but go for the very nice Amstrad Joyce / Anne emulator by John Elliot. With that it is possible to encapsulate and automate workloads that run on CP/M which date back to the 1980-ies.
+To allow old CP/M applications to run (for nostalgia reasons) and to ensure that old operating system can participate in CI/CD scenarios. In this project I am not using qemu but go for the very nice Amstrad Joyce / Anne emulator by John Elliot. With that it is possible to encapsulate and automate workloads that run on the CP/M operating system which dates back to the 1980-ies.
 
 ## Concept
 
