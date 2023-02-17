@@ -1,5 +1,7 @@
 # debian-joyce
 
+[![Container Repository on Quay: Debian Joyce](https://quay.io/repository/mbayreut/debian-joyce/status "Container Repository on Quay: Debian Joyce")](https://quay.io/repository/mbayreut/debian-joyce)
+
 After encapsulating operating systems like MS-DOS into container, I decided to go one step further back in history. Now I am extending **ancient** to the Zilog Z80 processor. At the time Amstrad had some Z80 based machines on the market. They were called Joyce and Anne. So why not put them into a container.
 
 ## Purpose
