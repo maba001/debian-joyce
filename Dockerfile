@@ -2,13 +2,12 @@ FROM debian:bullseye as builder
 
 RUN apt-get update \
  && apt-get upgrade -y \
- && apt-get install -y wget libreadline8 libreadline8 readline-common \
+ && apt-get install -y curl libreadline8 libreadline8 readline-common \
  && apt-get install -y build-essential libpng-dev libxml2-dev \
  && apt-get install -y libsdl1.2-dev libsdl1.2debian \
  && apt-get clean
 
 WORKDIR /tmp
-# RUN wget -q https://www.seasip.info/Unix/Joyce/joyce-2.4.0.tar.gz
 RUN curl -s -o joyce.tar.gz https://www.seasip.info/Unix/Joyce/joyce-2.4.0.tar.gz
 RUN tar xzf joyce.tar.gz
 
