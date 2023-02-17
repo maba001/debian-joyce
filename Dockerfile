@@ -8,8 +8,9 @@ RUN apt-get update \
  && apt-get clean
 
 WORKDIR /tmp
-RUN wget -q https://www.seasip.info/Unix/Joyce/joyce-2.4.0.tar.gz
-RUN tar xzf joyce*.tar.gz
+# RUN wget -q https://www.seasip.info/Unix/Joyce/joyce-2.4.0.tar.gz
+RUN curl -s -o joyce.tar.gz https://www.seasip.info/Unix/Joyce/joyce-2.4.0.tar.gz
+RUN tar xzf joyce.tar.gz
 
 RUN mkdir -p /opt/joyce \
  && cd /tmp/joyce* \
@@ -27,7 +28,7 @@ COPY --from=builder /opt/joyce /opt/joyce
 
 RUN apt-get update \
  && apt-get upgrade -y \
- && apt-get install -y vim telnet wget \
+ && apt-get install -y telnet \
  && apt-get install -y libsdl1.2debian libxml2 \
  && apt-get install -y tigervnc-standalone-server xfonts-base xterm x11-apps \
  && apt-get install -y procps dbus-x11 \
