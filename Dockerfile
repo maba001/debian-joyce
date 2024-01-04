@@ -1,4 +1,4 @@
-FROM debian:bullseye as builder
+FROM debian:bookworm as builder
 
 RUN apt-get update \
  && apt-get upgrade -y \
@@ -21,7 +21,7 @@ RUN mkdir -p /opt/joyce \
 RUN cd /tmp/joyce* \
  && make install
 
-FROM debian:bullseye
+FROM debian:bookworm-slim
 
 COPY --from=builder /opt/joyce /opt/joyce
 
