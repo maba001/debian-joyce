@@ -9,7 +9,7 @@ RUN apt-get update \
 
 WORKDIR /tmp
 # RUN curl -s -o joyce.tar.gz https://www.seasip.info/Unix/Joyce/joyce-2.4.2.tar.gz
-RUN curl -s -o joyce.tar.gz https://www.seasip.info/Unix/Joyce/joyce-2.5.2.tar.gz
+RUN curl -s -o joyce.tar.gz https://www.seasip.info/Unix/Joyce/joyce-2.5.3.tar.gz
 RUN tar xzf joyce.tar.gz
 
 RUN mkdir -p /opt/joyce \
